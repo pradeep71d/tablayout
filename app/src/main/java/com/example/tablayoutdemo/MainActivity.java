@@ -32,12 +32,12 @@ TabLayout tabLayout;
         tabLayout.addTab(secondtab);
         tabLayout.addTab(thirdtab);
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
+            @Override//after adding tabs we give onTabSelected method.
             public void onTabSelected(TabLayout.Tab tab) {
                 Fragment fragment=null;
                 switch (tab.getPosition()){
                     case 0:
-                        fragment=new FirstFragment();
+                        fragment=new FirstFragment();// this means at zero postion will be first fragment
                         break;
                     case 1:
                         fragment=new SecondFragment();
@@ -48,7 +48,7 @@ TabLayout tabLayout;
                 }
                 FragmentManager fragmentManager=getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fram1,fragment);
+                fragmentTransaction.replace(R.id.fram1,fragment);//here framelayout is replaced by 1st,2nd,third fragments.
                 fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                 fragmentTransaction.commit();
             }
