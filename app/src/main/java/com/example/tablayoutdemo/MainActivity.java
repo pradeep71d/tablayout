@@ -25,6 +25,9 @@ TabLayout tabLayout;
         firsttab.setText("FirstTab");//giving text to created tabs
         secondtab.setText("SecondTab");
         thirdtab.setText("ThirdTab");
+        firsttab.setIcon(R.mipmap.ic_launcher);
+        secondtab.setIcon(R.mipmap.ic_launcher);
+        thirdtab.setIcon(R.mipmap.ic_launcher);
         tabLayout.addTab(firsttab);//adding all tabs to tablayout
         tabLayout.addTab(secondtab);
         tabLayout.addTab(thirdtab);
