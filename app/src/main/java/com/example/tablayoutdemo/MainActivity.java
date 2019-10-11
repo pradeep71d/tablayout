@@ -18,7 +18,7 @@ TabLayout tabLayout;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tabLayout=findViewById(R.id.tab1);// finding ids and initializing
-        frameLayout=findViewById(R.id.fram1);
+        frameLayout=findViewById(R.id.fram1);//empty framelayout is container for Fragment.
         TabLayout.Tab firsttab=tabLayout.newTab();//creating 3 tabs
         TabLayout.Tab secondtab=tabLayout.newTab();
         TabLayout.Tab thirdtab=tabLayout.newTab();
